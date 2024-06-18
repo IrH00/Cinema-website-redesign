@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    max-width: auto; /* Set the maximum width of the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 0; /* Add 20px padding to all sides of the container */
+    overflow: hidden;
+  }
+
+nav{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+/* Desktop version */
+@media (min-width: 800px) {
+  nav {
+    padding-left: 60px; /* Add some space between the logo and the nav menu */
+  }
+}
+
+.desktop{
+  top: 10%;
+  }
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+nav li{
+    height: 50px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+
+  nav li {
+    will-change: transform;
+  }
+  
+  nav li:hover {
+    transform: scale(1.1);
+    transition: transform 0.45s ease-in-out;
+  }
+
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(94, 94, 94, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+  }
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar li{
+    width: 100%;
+  }
+.sidebar a{
+    width: 100%;
+  }
+.menu-button{
+    display: none;
+  }
+
+.menu-close{
+  display: none;
+}
+
+.buy-tickets {
+  background-color: #ffffff;
+  padding: 1px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.2s, color 0.2s;
+  border: 1px solid transparent;
+  height: 40px;
+  margin-top: 8px;
+}
+
+.buy-tickets:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hideOnMobile{
+  margin-top: 10px;
+}
+
+.sidebar .buy-tickets2 {
+  background-color: #fff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  width: 80%; 
+  margin: 0 auto;
+  overflow: hidden; /* Add this line to prevent overflow */
+  justify-content: center;
+  max-width: 150px;
+}
+
+.sidebar .buy-tickets2:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px 8px; /* Reduce the padding on hover to prevent overflow */
+}
+
+.logo {
+  position: absolute;
+  top: 18px;
+  left: 90px;
+  width: 250px;
+  height: auto;
+}
+
+.logo-mob {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 200px;
+  height: auto;
+  display: none;
+}
+
+@media(max-width: 800px){
+.hideOnMobile{
+    display: none;
+    }
+.menu-button{
+    display: block;
+    margin-left: 300px;
+    position: relative;
+    top: 7px;
+    }
+.menu-close{
+  display: block;
+}
+.buy-tickets{
+  display: none;
+}
+
+.logo{
+  display: none;
+}
+
+.logo-mob{
+  display: block;
+}
+  }
+@media(max-width: 400px){
+.sidebar{
+    width: 100%;
+    }
+  }
