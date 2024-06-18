@@ -85,6 +85,17 @@ nav a{
     right: 0;
     text-align: right;
     padding: 10px;
+    transition: transform 0.3s;
+  }
+
+.sidebar.open {
+    transform: translateX(0); /* Set the initial translate value */
+    display: flex;
+  }
+  
+.sidebar.closed {
+    transform: translateX(100%); /* Set the final translate value */
+    display: none;
   }
 
 .sidebar ul {
@@ -127,6 +138,7 @@ nav a{
 
 .hideOnMobile{
   margin-top: 10px;
+  display: block;
 }
 
 .sidebar .buy-tickets2 {
@@ -176,9 +188,15 @@ nav a{
 .menu-button{
     display: block;
     margin-left: 300px;
-    position: relative;
+    position: absolute;
     top: 7px;
+    right: 10px;
     }
+
+.sidebar.open ~ .menu-button {
+    display: none;
+    }
+  
 .menu-close{
   display: block;
 }
