@@ -169,7 +169,7 @@ nav a{
   display: none;
 }
 
-@media(max-width: 800px){
+@media(max-width: 1600px){
 .hideOnMobile{
     display: none;
     }
