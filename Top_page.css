@@ -1,0 +1,98 @@
+.background-picture {
+  position: relative;
+  height: 100vh; /* adjust the height as needed */
+  width: 100%;
+}
+
+.main-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('blade-runner-image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.opacity-layer-movie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+}
+
+#movie-content {
+    font-family: inter,sans-serif;
+    font-size: larger;
+    position: absolute;
+    top: 50%;
+    margin-left: 50px;
+    text-align: left;
+    color: #fff;
+  }
+
+.description{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.title{
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.back-button{
+  margin-top: 30px;
+}
+
+#progress-bar{
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 100% ;
+  translate: 22%;
+  height: 25px;
+  width: 66%;
+}
+
+.white-line{
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.white-dot-1{
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  translate: 0px -15px;
+}
+
+.white-dot-2{
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  translate: 0px -15px;
+  margin-left: 100%;
+}
+
+.current-dot{
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border: solid 3.5px #fff;
+  border-radius: 50%;
+  position: absolute;
+  translate: 0px -15px;
+  margin-left: 50%;
+}
