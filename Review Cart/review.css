@@ -1,0 +1,468 @@
+
+
+header {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add 20px padding to all sides of the container */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Navigation */
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px; /* increase the margin to accommodate the larger logo */
+}
+
+.logo img {
+  width: 200px; /* adjust the width to your liking */
+  height: 40px; /* adjust the height to your liking */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  margin-right: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+nav .right-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav .right-nav img {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 5px;
+  order: 1;
+}
+
+nav .right-nav span {
+  font-size: 14px;
+  order: 2;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.buy-tickets {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.2s, color 0.2s;
+  border: 1px solid transparent;
+}
+
+.buy-tickets:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav span {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+nav img {
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/*content starts here*/
+
+.headertitle {
+    padding: 135px;
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  #uppertitle {
+    margin-top: 150px;
+    margin-bottom: -70px;
+    font-size: 30px;
+  }
+  
+  #title {
+    font-size: 80px;
+  }
+  
+  .back {
+    border: 2px solid white;
+    font-size: 23px;
+    width: 280px;
+    margin-top: -30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  .back:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  #line {
+    margin-top: 100px;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+  }
+
+  #boxbottom {
+    margin-top: 180px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 300px;
+    font-size: 20px;
+  }
+  
+  .seats {
+    flex-shrink: 0;
+  }
+  
+  .details {
+    flex-shrink: 0;
+  }
+  
+  .reviewcart {
+    flex-shrink: 0;
+  }
+  
+  #maru {
+    margin-left: 30px;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  #maruselected {
+    margin-left: -40px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.fkingparentcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+  .container-content {
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(255, 255, 255, 30%);
+    border-radius: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #box1 {
+    margin-bottom: -20px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #box2 {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+  }
+
+  #ticket {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 30%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #your-ticket {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .your-ticket-container {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  #ticket-container-left {
+    float: left;
+    font-size: 20px;
+    margin-bottom: auto;
+  }
+
+  #ticket-container-right {
+    text-align: end;
+    margin-left: auto;
+    margin-top: -20px;
+  }
+
+  #seatnumba {
+    font-size: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .your-order {
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    width: auto;
+    font-size: 17px;
+    margin-left: auto;
+    padding-left: 10px;
+  }
+
+  #summary {
+    font-weight: 740;
+    font-size: 25px;
+  }
+
+  #sub {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    display: flex;
+    flex-flow: row;
+  }
+
+  #subleft {
+    text-align: left;
+  }
+
+  #subright {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  #total {
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
+  }
+
+  #totalleft {
+    text-align: left;
+  }
+
+  #totalright {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  #promo {
+    margin-bottom: 5px;
+  }
+
+  ::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+  #box3 {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  #purchase-botan {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 30%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    border: 1px s;
+  }
+
+  #purchase-botan:hover {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #box2 {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+  
+    #ticket {
+      width: 80%;
+      background-color: rgba(255, 255, 255, 30%);
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    #your-ticket {
+      font-weight: 600;
+      font-size: 20px;
+    }
+  
+    .your-ticket-container {
+      display: flex;
+      flex-flow: column;
+    }
+    
+    #ticket-container-left {
+      float: left;
+      font-size: 20px;
+      margin-bottom: auto;
+    }
+  
+    #ticket-container-right {
+      text-align: left;
+      margin-top: -20px;
+    }
+  
+    #seatnumba {
+      font-size: 40px;
+      text-align: left;
+    }
+  
+    .your-order {
+      display: flex;
+      justify-content: left;
+      flex-flow: column;
+      width: 100%;
+      font-size: 17px;
+    }
+  
+    #summary {
+      font-weight: 740;
+      font-size: 25px;
+    }
+  
+    #sub {
+      margin-top: -30px;
+      margin-bottom: -30px;
+      display: flex;
+      flex-flow: row;
+    }
+  
+    #subleft {
+      text-align: left;
+    }
+  
+    #subright {
+      text-align: right;
+      margin-left: auto;
+    }
+  
+    #total {
+      font-size: 25px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 7px;
+    }
+  
+    #totalleft {
+      text-align: left;
+    }
+  
+    #totalright {
+      text-align: right;
+      margin-left: auto;
+    }
+  
+    #promo {
+      margin-bottom: 5px;
+    }
+  
+    ::placeholder {
+      color: black;
+      opacity: 0.5;
+    }
+  }
