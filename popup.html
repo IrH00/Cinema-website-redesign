@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* modal */
+      .modal {
+        width: 80vw;
+        height: 300px;
+        background: gray;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 5px;
+        border: none;
+
+        font-weight: bold;
+        margin: auto;
+      }
+
+      .modal-container {
+        border-radius: 5px;
+        border: 1px solid white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal::backdrop {
+        background: rgba(151, 151, 151, 0.5);
+      }
+
+      .buttons-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .buttons-container .button:first-child {
+        margin-right: 50px;
+      }
+
+      /* common */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        margin: 2rem;
+        font-family: system-ui;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: var(--gray-8);
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 105px;
+        text-transform: capitalize;
+        border: 2px solid white;
+        background-color: gray;
+        color: white;
+        padding: 10px 30px;
+        font-weight: bold;
+      }
+
+      .button:hover,
+      .button:focus {
+        background-color: #888;
+      }
+
+      .modal h2 {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+
+      .modal h2.header_success {
+        text-transform: uppercase;
+      }
+
+      .subtext {
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Botons i hate</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit alias
+      dicta quibusdam cumque ipsa ipsum reiciendis animi, officia provident
+      veniam quis delectus minima earum suscipit ea, beatae vitae ipsam nemo.
+    </p>
+    <button class="button" id="purchase">Purchase</button>
+
+    <dialog class="modal" id="confirmation-modal">
+      <div class="modal-container">
+        <h2>Are you sure you want to check out?</h2>
+        <div class="buttons-container">
+          <button class="button" id="confirm">yes</button>
+          <button class="button" id="close-confirmation">no</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="success-modal">
+      <div class="modal-container">
+        <h2 class="header_success">Checkout success!</h2>
+        <div class="subtext">
+          <p>Your ticket has been sent to your email.</p>
+          <p>See you at the cinema</p>
+        </div>
+        <button class="button" id="back-home">Back to home</button>
+      </div>
+    </dialog>
+
+    <script>
+      const confirmationModal = document.getElementById("confirmation-modal");
+      const successModal = document.getElementById("success-modal");
+
+      const purchaseButton = document.getElementById("purchase");
+      const confirmButton = document.getElementById("confirm");
+      const closeConfirmationModalButton =
+        document.getElementById("close-confirmation");
+      const backHomeButton = document.getElementById("back-home");
+
+      purchaseButton.addEventListener("click", () => {
+        confirmationModal.showModal();
+      });
+
+      confirmButton.addEventListener("click", () => {
+        confirmationModal.close();
+        successModal.showModal();
+      });
+
+      closeConfirmationModalButton.addEventListener("click", () => {
+        confirmationModal.close();
+      });
+
+      backHomeButton.addEventListener("click", () => {
+        successModal.close();
+      });
+    </script>
+  </body>
+</html>
