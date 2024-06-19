@@ -1,0 +1,429 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: auto; /* Set the maximum width of the container */
+  margin: auto; /* Center the container horizontally */
+  padding: 0; /* Add 20px padding to all sides of the container */
+  overflow: hidden;
+}
+
+nav{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+/* Desktop version */
+@media (min-width: 800px) {
+nav {
+  padding-left: 60px; /* Add some space between the logo and the nav menu */
+}
+}
+
+.desktop{
+top: 10%;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+  margin-right: 20px;
+  display: inline-block;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+nav li {
+  will-change: transform;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+  transition: transform 0.45s ease-in-out;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(94, 94, 94, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  right: 0;
+  text-align: right;
+  padding: 10px;
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Set the initial translate value */
+  display: flex;
+}
+
+.sidebar.closed {
+  transform: translateX(100%); /* Set the final translate value */
+  display: none;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+
+.menu-close{
+display: none;
+}
+
+.buy-tickets {
+background-color: #ffffff;
+padding: 1px 10px;
+border-radius: 10px;
+font-size: 16px;
+font-weight: bold;
+color: #000;
+transition: background-color 0.2s, color 0.2s;
+border: 1px solid transparent;
+height: 40px;
+margin-top: 8px;
+}
+
+.buy-tickets:hover {
+background-color: transparent;
+border: 1px solid #fff;
+color: #fff;
+cursor: pointer;
+}
+
+.hideOnMobile{
+margin-top: 10px;
+}
+
+.sidebar .buy-tickets2 {
+background-color: #fff;
+padding: 5px 15px;
+border: none;
+border-radius: 10px;
+font-size: 14px;
+color: #000;
+text-decoration: none;
+width: 80%; 
+margin: 0 auto;
+overflow: hidden; /* Add this line to prevent overflow */
+justify-content: center;
+max-width: 150px;
+}
+
+.sidebar .buy-tickets2:hover {
+background-color: transparent;
+border: 1px solid #fff;
+color: #fff;
+cursor: pointer;
+padding: 4px 8px; /* Reduce the padding on hover to prevent overflow */
+}
+
+.logo {
+position: absolute;
+top: 18px;
+left: 90px;
+width: 250px;
+height: auto;
+}
+
+.logo-mob {
+position: absolute;
+top: 18px;
+left: 20px;
+width: 200px;
+height: auto;
+display: none;
+}
+
+/* Movie Details */
+
+main {
+  margin-top: 0; /* adjust the value to your liking */
+}
+
+.background-image-container {
+  overflow: hidden;
+  max-width: 100%; /* Add this to ensure the container doesn't exceed the width */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  position: relative;
+}
+
+.background-image {
+  width: 100vw; /* Set the image width to 100% of the container */
+  height: auto; /* Set the image height to auto, so it scales with the width */
+  object-fit: cover; /* Scale the image to cover the entire container */
+  object-position: center; /* Center the image horizontally and vertically */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  position: relative;
+  left: 50%; /* Move the image 50% to the left */
+  transform: translateX(-50%);
+  max-width: none;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.movie-info {
+  padding: 0px;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 0px;
+  top: 80%;
+  left: 15%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  line-height: 1;
+}
+
+.movie-details {
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.rating-box {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 2px 4px;
+  font-size: 0.3em;
+  border-radius: 2px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.imdb {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 2px 4px;
+  font-size: 0.3em;
+  border-radius: 2px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.movie-info h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #c0c0c0;
+}
+
+.movie-info h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.sub-text {
+  font-size: 20px;
+  color: #b6b5b5;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.blade-runner-text{
+  font-size: 22px;
+  color: #ececec;
+  font-weight: 500;
+  margin-top: 20px;
+}
+/* Showtimes */
+
+.showtimes {
+  background-color: rgba(51, 51, 51, 0.87);
+  padding: 10px;
+  width: 70%;
+  margin: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 95%;
+  left: 12%;
+  
+}
+
+.showtimes-form {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.form-group {
+  margin-bottom: 10px;
+
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group:first-child {
+  margin-right: 20px;
+}
+
+.form-group:last-child {
+  margin-left: auto; /* add this to push the second form group to the right */
+}
+
+.form-group select {
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#select-date {
+  width: 100px;
+  font-size: 14px;
+  padding: 5px;
+  margin: 0;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #fff; /* add a white outline */
+  color: #fff; /* set the text color to white */
+  padding: 5px;
+}
+
+#select-date:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* add a slight white background on hover */
+  border-color: #fff; /* keep the white outline on hover */
+}
+
+#select-date option {
+  color: #000; /* set the text color to black */
+}
+
+#select-cinema {
+  width: 160px;
+  font-size: 14px;
+  padding: 5px;
+  margin: 0;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #fff; /* add a white outline */
+  color: #fff; /* set the text color to white */
+  padding: 5px;
+}
+
+#select-cinema:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* add a slight white background on hover */
+  border-color: #fff; /* keep the white outline on hover */
+}
+
+#select-cinema option {
+  color: #000; /* set the text color to black */
+}
+
+.showtimes-table {
+  margin-top: 20px;
+}
+
+.showtimes-section {
+  margin-bottom: 20px;
+}
+
+.showtimes-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.showtime-item {
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.showtime-item span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.showtime-item:hover {
+  background-color: #555;
+}
+
+@media(max-width: 1600px){
+  .hideOnMobile{
+      display: none;
+      }
+  .menu-button{
+      display: block;
+      margin-left: 300px;
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      }
+
+  .menu-close{
+    display: block;
+  }
+  .buy-tickets{
+    display: none;
+  }
+  
+  .logo{
+    display: none;
+  }
+  
+  .logo-mob{
+    display: block;
+  }
+    }
+  @media(max-width: 400px){
+  .sidebar{
+      width: 100%;
+      }
+    }

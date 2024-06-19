@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yeehaw Cinema</title>
+  <link rel="stylesheet" href="movie page.css">
+  <script src="movie page.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <img src="images/logo.png" alt="Logo" class="logo-mob">
+
+        <ul>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Movies</a></li>
+            <li class="hideOnMobile"><a href="#">Schedules</a></li>
+            <li class="hideOnMobile"><a href="#">Promotions</a></li>
+            <li class="hideOnMobile"><a href="#">Locations</a></li>
+            <li><a href="#" class="buy-tickets">Buy Tickets</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+          <li class="menu-close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Schedules</a></li>
+          <li><a href="#">Promotions</a></li>
+          <li><a href="#">Locations</a></li>  
+          <li><a href="#" class="buy-tickets2">Buy Tickets</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="background-image-container">
+      <img src="images/giphy.webp" alt="Background Image" class="background-image">
+    </div>
+    <section class="movie-details">
+        <div class="container">
+          <div class="movie-info">
+            <h2>Sci fi/Thriller, 2h 43m</h2>
+            <h1>Blade Runner 2049 <span class="rating-box">PG-12</span><span class="imdb">IMDb 8.0/10</span> </h1>
+            <p class="sub-text">Directed by Denis Villeneuve</p>
+            <p class="sub-text">Starring Harrison Ford, Ryan Gosling, Ana de Armas</p>
+            <p class="blade-runner-text">Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard,</br> who's been missing for thirty years.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="showtimes">
+      <div class="container">
+        <div class="showtimes-form">
+          <div class="form-group">
+            <label for="select-date">Select Date:</label>
+            <select id="select-date">
+              <option value="June 4">June 4</option>
+              <option value="June 5">June 5</option>
+              <option value="June 6">June 6</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="select-cinema">Select Cinema:</label>
+            <select id="select-cinema">
+              <option value="Toshima City">Toshima City</option>
+              <option value="Sunshine City Cinema">Sunshine City Cinema</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="showtimes-table">
+          <div class="showtimes-section">
+            <h3>Standard</h3>
+            <div class="showtimes-row">
+              <div class="showtime-item">
+                <span>10:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>10:30</span>
+              </div>
+              <div class="showtime-item">
+                <span>11:30</span>
+              </div>
+              <div class="showtime-item">
+                <span>12:30</span>
+              </div>
+              <div class="showtime-item">
+                <span>13:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>14:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>14:40</span>
+              </div>
+              <div class="showtime-item">
+                <span>15:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>16:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>17:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>17:30</span>
+              </div>
+            </div>
+            <div class="showtimes-row">
+              <div class="showtime-item">
+                <span>18:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>20:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>21:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>22:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>22:30</span>
+              </div>
+            </div>
+          </div>
+          <div class="showtimes-section">
+            <h3>4DX</h3>
+            <div class="showtimes-row">
+              <div class="showtime-item">
+                <span>10:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>12:30</span>
+              </div>
+              <div class="showtime-item">
+                <span>13:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>14:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>15:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>16:00</span>
+              </div>
+              <div class="showtime-item">
+                <span>17:00</span>
+            </div>
+        </div>
+        <div class="showtimes-row">
+          <div class="showtime-item">
+            <span>18:00</span>
+          </div>
+          <div class="showtime-item">
+            <span>20:00</span>
+          </div>
+          <div class="showtime-item">
+            <span>21:30</span>
+          </div>
+        </div>
+        <p>Adult: ¥2000 Student: ¥1700 Kids: ¥1500</p>
+      </div>
+      </div>
+      </div>
+      </section>
+      </main>
+      
+      </body>
+      </html>
