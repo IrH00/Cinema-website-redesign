@@ -1,6 +1,10 @@
+.divider{
+  height: 40vh;
+}
+
 .background-picture {
   position: relative;
-  height: 100vh; /* adjust the height as needed */
+  height: 50vh; /* adjust the height as needed */
   width: 100%;
 }
 
@@ -28,7 +32,7 @@
     font-family: inter,sans-serif;
     font-size: larger;
     position: absolute;
-    top: 50%;
+    top: 25%;
     margin-left: 50px;
     text-align: left;
     color: #fff;
@@ -55,7 +59,7 @@
   position: absolute;
   text-align: center;
   align-items: center;
-  top: 100% ;
+  top: 80% ;
   translate: 22%;
   height: 25px;
   width: 66%;
@@ -95,4 +99,8 @@
   position: absolute;
   translate: 0px -15px;
   margin-left: 50%;
+}
+
+footer{
+  height: 10vh;
 }

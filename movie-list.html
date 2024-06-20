@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Hall Website</title>
+    <link rel="stylesheet" href="movie-list.css">
+    <link rel="stylesheet" href="./nav/nav.css">
+    <script src="./nav/nav.js"></script>
+</head>
+<body>
+    <div id="container">
+        <nav>
+          <img src="logo.png" alt="Logo" class="logo">
+          <img src="logo.png" alt="Logo" class="logo-mob">
+    
+            <ul>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Movies</a></li>
+                <li class="hideOnMobile"><a href="#">Schedules</a></li>
+                <li class="hideOnMobile"><a href="#">Promotions</a></li>
+                <li class="hideOnMobile"><a href="#">Locations</a></li>
+                <li><a href="#" class="buy-tickets">Buy Tickets</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+              <li class="menu-close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Schedules</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Locations</a></li>  
+              <li><a href="#" class="buy-tickets2">Buy Tickets</a></li>
+          </ul>
+        </nav>
+      </div>
+    <header>
+        <h2>Now Showing</h2>
+    </header>
+    <main>
+        <section class="location">
+            <div class="select-location">
+                <h2>Select City:</h2>
+                <select name="city" id="city">
+                    <option value="">Select City:</option>
+                    <option value="Toshima City">Toshima City</option>
+                </select>
+                <h2>Select Cinema:</h2>
+                <select name="cinema" id="cinema">
+                    <option value="">Select Cinema:</option>
+                    <option value="Sunshine City Cinema">Sunshine City Cinema</option>
+                </select>
+            </div>
+        </section>
+        <ul>
+            <li>
+                <img src="https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg" alt="Movie Poster 1" width="150" height="200">
+                <div class="movie-info">
+                    <h3>Movie Name 1</h3>
+                    <p>PG-12, Sci-fi</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </li>
+            <li>
+                <img src="https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/416/7/416-7-101P/Inception-C-Rodolfo-Reyes-Poster.jpg" alt="Movie Poster 2" width="150" height="200">
+                <div class="movie-info">
+                    <h3>Movie Name 2</h3>
+                    <p>PG-13, Fantasy, R, Action, G, Musical</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </li>
+            <li>
+                <img src="https://deadline.com/wp-content/uploads/2023/04/barbie-BARBIE_Character_EMMA_InstaVert_1638x2048_DOM_rgb.jpg?w=800" alt="Movie Poster 3" width="150" height="200">
+                <div class="movie-info">
+                    <h3>Movie Name 3</h3>
+                    <p>PG-12, Sci-fi</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </li>
+            <li>
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/191004124125-rambo-eric-sojay-600-hi.jpg?q=w_2000,c_fill" alt="Movie Poster 4" alt="Movie Poster 4" width="150" height="200">
+                <div class="movie-info">
+                    <h3>Movie Name 4</h3>
+                    <p>PG-13, Fantasy, R, Action, G, Musical</p>
+                    <button>Buy Tickets</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

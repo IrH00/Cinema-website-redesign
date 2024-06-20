@@ -6,25 +6,36 @@
     <title>Cinema Name</title>
     <link rel="stylesheet" href="landing_page.css">
     <script src="landing_page.js" defer></script>
+    <link rel="stylesheet" href="./nav/nav.css">
+    <script src="./nav/nav.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo"><img id="logo-pic" src="Logo.png" alt=""></div>
+    <div id="container">
         <nav>
-            <ul id="middle-header">
-                <li class="header-list"><a id="header-nav" href="#">Home</a></li>
-                <li class="header-list"><a id="header-nav" href="#">Movies</a></li>
-                <li class="header-list"><a id="header-nav" href="#">Schedules</a></li>
-                <li class="header-list"><a id="header-nav" href="#">Promotions</a></li>
-                <li class="header-list"><a id="header-nav" href="#">Locations</a></li>
+          <img src="logo.png" alt="Logo" class="logo">
+          <img src="logo.png" alt="Logo" class="logo-mob">
+    
+            <ul>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Movies</a></li>
+                <li class="hideOnMobile"><a href="#">Schedules</a></li>
+                <li class="hideOnMobile"><a href="#">Promotions</a></li>
+                <li class="hideOnMobile"><a href="#">Locations</a></li>
+                <li><a href="#" class="buy-tickets">Buy Tickets</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
-            <ul id="right-header">
-                <li id="buy-tickets">
-                    <a><strong>Buy Tickets</strong></a>
-                </li>
-            </ul>
+            <ul class="sidebar">
+              <li class="menu-close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Schedules</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Locations</a></li>  
+              <li><a href="#" class="buy-tickets2">Buy Tickets</a></li>
+          </ul>
         </nav>
-    </header>
+      </div>
+    <div id="container"></div>
     <main>
         <div id="main-background">
             <div class="carousel-slide" style="background-image: url('present-1.jpg');"></div>

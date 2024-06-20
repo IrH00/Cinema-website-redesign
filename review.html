@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <title>Review Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="review.css">
+  <link rel="stylesheet" href="landing_page.css">
+  <link rel="stylesheet" href="Top_page.css">
+  <link rel="stylesheet" href="./nav/nav.css">
+  <script src="./nav/nav.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <img src="logo.png" alt="Logo" class="logo">
+      <img src="logo.png" alt="Logo" class="logo-mob">
+
+        <ul>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Movies</a></li>
+            <li class="hideOnMobile"><a href="#">Schedules</a></li>
+            <li class="hideOnMobile"><a href="#">Promotions</a></li>
+            <li class="hideOnMobile"><a href="#">Locations</a></li>
+            <li><a href="#" class="buy-tickets">Buy Tickets</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+          <li class="menu-close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Schedules</a></li>
+          <li><a href="#">Promotions</a></li>
+          <li><a href="#">Locations</a></li>  
+          <li><a href="#" class="buy-tickets2">Buy Tickets</a></li>
+      </ul>
+    </nav>
+  </div>
+<section id="top-movie">
+    <div class="background-picture">
+        <div class="main-background">
+        </div>
+        <div class="opacity-layer-movie"></div>
+    </div>
+    <div id='movie-content'>
+        <p class="description">Now purchasing tickets for...</p>
+        <h1 class="title">Blade Runner 2049</h1>
+        <p class="description">On Tuesday, 4th June at 15:00, Sunshine City Cinema</p>
+        <button class="back-button">Back to Select Seats</button>
+    </div>
+    <div id="progress-bar">
+        <div class="white -line"></div>
+        <div class="white-dot-1"></div>
+        <div class="current-dot"></div>
+        <div class="white-dot-2"></div>
+    </div>
+</section>
+<div class="divider"></div>
+  <div class="fkingparentcontainer">
+  <div class="container-content">
+    <div id="box1">
+      <p id="review">REVIEW</p>
+    </div>
+    <div id="box2">
+      <div id="ticket">
+        <p id="your-ticket">YOUR TICKETS</p>
+        <hr>
+        <div class="your-ticket-container">
+          <div id="ticket-container-left" style="max-width: 1500px;">
+            <p id="ticket-detail">
+              Tuesday, June 4th 2024<br>
+              15:00 JST<br>
+              Sunshine City Cinema
+            </p>
+          </div>
+          <div id="ticket-container-right">
+            <p id="seat-detail">
+              ROW <b id="seatnumba">G</b> SEAT <b     
+              id="seatnumba">5</b> <br>
+              ROW <b id="seatnumba">G</b> SEAT <b 
+              id="seatnumba">6</b>
+              <div id="hito">1 ADULT, 1 STUDENT</div>
+            </p>
+          </div>
+       </div>
+      </div>       
+        <div class="your-order">
+          <p id="summary">Order Summary</p>
+          <div id="sub">
+          <p id="subleft">Subtotal: <br>
+            Coupon:</p>
+          <p id="subright">¥3700 <br>
+            Not yet included</p>
+          </div>
+          <p id="promo">Promotional Code:</p>
+          <input type="text" placeholder="Type your promotional code here...">
+          <div id="total">
+          <p id="totalleft">Total:</p>
+          <p id="totalright">¥3700</p>
+          </div>
+        </div>
+      </div>
+      <div id="order"></div>
+    <div id="box3">
+      <button id="purchase-botan">Purchase</button>
+    </div>
+  </div>
+</div>
+<footer></footer>
+</body>

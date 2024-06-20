@@ -1,0 +1,179 @@
+body {
+    background-color: black;
+}
+
+.parentcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.boxabuabu {
+    background-color: rgba(255, 255, 255, 30%);
+    display: flex;
+    flex-flow: column;
+    border-radius: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-family: "open sans", sans-serif;
+    color: white;
+    height: auto;
+}
+
+.anak1 {
+    text-align: left;
+    width: auto;
+}
+
+#paymenttitle {
+    font-size: 30px;
+}
+
+#paymentdescription {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.anak2 {
+    display: flex;
+    flex-flow: row;
+    width: auto;
+}
+
+.test{
+    display: flex;
+    flex-flow: row;
+}
+
+.cucu1 {
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    width: auto;
+    margin-right: 20px;
+}
+
+.cucu2 {
+    display: flex;
+    flex-flow: column;
+    margin-left: 40px;
+    margin-right: 25px;
+    flex-shrink: 0;
+    width: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-group2 {
+    margin-bottom: 92px;
+}
+
+.form-group2 label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group2 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.cucu3 {
+    display: flex;
+    flex-flow: row;
+    margin-left: 60px;
+    flex-shrink: 0;
+    width: auto;
+    justify-content: center;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 100%;
+}
+
+.ticket-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+#tickettext1{
+    font-size: 30px;
+}
+
+#tickettext2{
+    font-size: 16px;
+}
+
+.checkout-button {
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 30%);
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.checkout-button:hover {
+    margin-top: 5px;
+    background-color: #000;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .anak2{
+        flex-flow: column !important;
+    }
+    .vl{
+        display:none;
+    }
+    .cucu3{
+        margin-left: 0;
+        text-align: center;
+        padding-top: 10%;
+        margin-top: 5%;
+        border-top: solid 2px #fff;
+        width: 100%;
+    
+    }
+    .ticket-section{
+        margin: auto;
+    }
+}
+
+footer{
+    height: 50px;
+}
+

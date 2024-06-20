@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade Runner 2049 Tickets</title>
+    <link rel="stylesheet" href="selftry.css">
+    <link rel="stylesheet" href="landing_page.css">
+    <link rel="stylesheet" href="Top_page.css">
+    <script src="selftry.js" defer></script>
+    <link rel="stylesheet" href="./nav/nav.css">
+    <script src="./nav/nav.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+          <img src="logo.png" alt="Logo" class="logo">
+          <img src="logo.png" alt="Logo" class="logo-mob">
+    
+            <ul>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Movies</a></li>
+                <li class="hideOnMobile"><a href="#">Schedules</a></li>
+                <li class="hideOnMobile"><a href="#">Promotions</a></li>
+                <li class="hideOnMobile"><a href="#">Locations</a></li>
+                <li><a href="#" class="buy-tickets">Buy Tickets</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="sidebar">
+              <li class="menu-close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Schedules</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Locations</a></li>  
+              <li><a href="#" class="buy-tickets2">Buy Tickets</a></li>
+          </ul>
+        </nav>
+      </div>
+    <section id="top-movie">
+        <div class="background-picture">
+            <div class="main-background">
+            </div>
+            <div class="opacity-layer-movie"></div>
+        </div>
+        <div id='movie-content'>
+            <p class="description">Now purchasing tickets for...</p>
+            <h1 class="title">Blade Runner 2049</h1>
+            <p class="description">On Tuesday, 4th June at 15:00, Sunshine City Cinema</p>
+            <button class="back-button">Back to Select Seats</button>
+        </div>
+        <div id="progress-bar">
+            <div class="white-line"></div>
+            <div class="white-dot-1"></div>
+            <div class="current-dot"></div>
+            <div class="white-dot-2"></div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <div class="parentcontainer">
+        <div class="boxabuabu">
+            <div class="anak1">
+                <h1 id="paymenttitle">PAYMENT DETAILS</h1>
+                <p id="paymentdescription">Enter your details below for your payment</p>
+            </div>
+            <div class="anak2">
+                <div class="test">
+                <div class="cucu1">
+                    <div class="form-group">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number*</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number*</label>
+                        <input type="text" id="card-number" name="card-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="expire-date">Expire Date*</label>
+                        <input type="month" id="expire-date" name="expire-date">
+                    </div>
+                </div>
+                <div class="cucu2">
+                    <div class="form-group2">
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div class="form-group2">
+                        <label for="confirm-email">Confirm Email*</label>
+                        <input type="email" id="confirm-email" name="confirm-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV*</label>
+                        <input type="password" id="cvv" name="cvv">
+                    </div>
+                </div>
+            </div>
+                <div class="cucu3">
+                    <div class="vl"></div>
+                    <div class="ticket-section">
+                        <p id="tickettext2">YOUR TICKETS</p>
+                        <h3 id="tickettext1">G5, G6</h3>
+                        <p>1 ADULT, 1 STUDENT</p>
+                        <button class="checkout-button">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
